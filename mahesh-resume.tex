@@ -1,0 +1,406 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Mahesh Kumar's Resume based on res_yy.sty 
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%
+%% The following code sets up the document formatting
+%%
+
+%this assumes that res_yy.sty is in some path
+\documentstyle[hyperref, margin, line]{res_yy}
+
+\hypersetup{backref,pdfpagemode=Full,colorlinks=true,backref}
+
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\voffset}{-0.30in}
+\addtolength{\textwidth}{1.00in} \addtolength{\textheight}{1.50in}
+
+\renewcommand{\namefont}{\LARGE\emph}
+
+
+
+%%
+%% The following code defines some macros for terms which have raised font
+%% (ie 4\fourth would result 4th with the 'th' raised (superscripted)
+%%
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+
+
+%%
+%% starting the actual document
+%%
+
+\begin{document}
+
+%the name in big fonts at the top of resume
+%this is left aligned
+\name{Mahesh Kumar Vadla}
+
+%this is right aligned
+\address{
+Email: mahesh4gnu@gmail.com  \ \ \ \ \ Mobile: +91-9491884300
+}
+
+\begin{resume}
+
+
+
+%%
+%% This section of code is inelegant, but I'm too lazy to fix it
+%%
+
+\section{\textsc{Summary}}
+Self-motivated individual with over 1 year of experience in Systems
+Engineering and 7 months experience in programming. Esteemed to work
+on Free/Open Source Software. Opted to work in any development stream.
+\\
+ 
+\section{\textsc{Education}}
+
+\textbf{C.V.S.R. College Of Engineering, Hyderabad} (Affi. to \textbf{JNTU-H})\hfill 2006 - 2010 \\
+B.Tech in Computer Science \& Engineering\hfill \\
+\newline
+\textbf{Narayana Junior College (for Boys), Narayanaguda, Hyderabad} \hfill 2005 - 2006 \\ 
+Board Of Intermediate Education (II year) \\
+\textbf{Gnanadeep Junior College, Kamareddy} \hfill 2004 - 2005\\
+Board Of Intermediate Education (I year) \\
+\newline
+\textbf{Nagarjuna High School, Kamareddy} \hfill 2003 - 2004 \\
+Secondary School Certificate
+\\
+
+%%
+%% the meat of the resume starts now
+%%
+
+\begin{formatb}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Professional Experience}}
+\employer{\textbf{International Institute of Information Technology}}
+\title{\em \textbf{Mid-level Project Engineer}}
+\location{Hyderabad, Andhra Pradesh}
+\dates{\em \textbf{2011 July till date}\vspace*{0.3cm}}
+\begin{position}
+\textbf{Description}: Virtual Labs is a mission mode project funded by
+Ministry of Human Resource Development(MHRD), India. Professors and
+students from various institutions in India develop labs based on
+various courses. The goal is to identify and develop various process
+models for easy development, deployment and distribution of virtual
+labs.\\
+\textbf{Role}: Administering the centralised LDAP Accounts, deploying
+the labs, Packaging the labs, implementing the LiveCD distribution
+model and Virtual-labs Web Analytics maintenance.\\
+\textbf{Contributions}:
+\begin{itemize}
+\item Creating and maintaining the accounts for the developers of the
+  Labs using LDAP and Redmine
+\item Helping out the Lab Developers to deploy their labs in our
+  process model
+\item Packaging the labs as debian binary packages (.deb)
+\item Created the LiveCD for the virtual-labs (hosted by
+  http://virtual-labs.ac.in)
+\item Installed the web analytics tool ``Piwik'' and maintained the same
+  for the virtual-labs web pages and generated the reports.
+\item Installed the wiki documentation tool ``mediawiki'' and
+  configured the LDAP authentication for the same.\end{itemize}
+\textbf{Technologies Used}: LDAP, Redmine, SSH, SVN, PHP, Shell
+Scripting, Debian GNU Tools and Piwik Web Analytics Tool.
+\end{position}
+\\
+\employer{\textbf{Innominds Software Pvt. Ltd.}}
+\title{\em \textbf{Trainee Software Engineer}}
+\location{Hyderabad, Andhra Pradesh}
+\dates{\em \textbf{2010 December to 2011 June}\vspace*{0.3cm}}
+\begin{position}
+\textbf{Description}: Innominds Software is a leading Outsourced
+Software Product Engineering Services company which provides the
+engineering services for the Mobile and Telecom Technology, Enterprise
+Software and Testing the products.\\
+\textbf{Role}: Trained on Webkit based browser for BREW mobile
+platform, resolving the issues on the same browser and the Opensource
+Webkit under GTK+ and submitted the patches to Webkit Opensource.\\
+\textbf{Contributions}: 
+\begin{itemize}
+\item Resolved some issues and bugs in the webkit based BMP Browser
+  developed by Innominds
+\item Resolved some opensource open issues on rendering of the Webkit
+  engine under GTK+ and Qt.
+\end{itemize}
+\textbf{Technologies used}: C, BREW Mobile Platform, GIT Version
+Control  
+\end{position}
+\\
+
+%%
+%% Academic Projects
+%%
+
+\section{\textsc{Academic Projects}}
+\employer{\textbf{Pagination Application}}
+\title{\em \textbf{Main Project}}
+\location{Swecha (a non-profit organisation), Andhra Pradesh}
+\dates{\em \textbf{3 Months}\vspace*{0.3cm}}
+\begin{position}
+\textbf{Description}: This project is to provide an application for
+the DTP operators for the pagination process. This is a Free \& Open
+source Software which is built by using the GTK+ Libraries.\\
+\textbf{Role}: My module in this project is, File Format. i.e, how the
+data of the documents of the application can be stored/retrieved
+from/to that application.\\
+\textbf{Technologies Used}: XML parsers with Python.\\
+\end{position}
+\employer{\textbf{Building GNU/Linux Operating System From Scratch}}
+\title{\em \textbf{Mini Project}}
+\location{Swecha (a non-profit organisation), Andhra Pradesh}
+\dates{\em \textbf{1 Month}\vspace*{0.3cm}}
+\begin{position}
+\textbf{Description}: This project is subjected to give a basic idea
+of how to build our own operating system and how  to  customize it
+according to our needs. In this project, I had also provided that how
+to make a live environment of an operating system.\\
+\textbf{Role}: Single-army Project\\
+\textbf{Technologies Used}: Basic Unix commands and integration of
+Linux kernel.\\
+\end{position}
+
+
+%%
+%% We use the same formatting for projects as for work experience
+%% Shown below is the formatting used previously
+%%
+%%  \begin{formatb}
+%%    \employer{l}\title{r}\\
+%%    \location{l}\dates{r}\\
+%%    \body\\
+%%  \end{formatb}
+%%
+%% 
+%%  Note that \location is now being used for non-location information
+%%
+
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\section{\textsc{Technical Skills}}
+
+\employer{\textbf{Debian GNU/Linux and derivatives}}
+\dates{}
+\begin{position}
+Knowledge in administering the GNU/Linux operating systems (Debian and
+its derivatives), basic knowledge on installing and maintaining LDAP
+Servers, Apache Server, Mysql server.Created custom binary packages
+for debian (*.deb) for internal software at job locations. Scheduling
+tasks using ``cron''. Custom built Debian based distributions for
+installing at client and office locations.
+\end{position}
+
+\employer{\textbf{Virtualization}}
+\dates{}
+\begin{position}
+Implementing ``KVM'' for fully and para virtualization methods. Can
+implement the ``KVM'' and Container based virtualization (``OpenVZ'')
+using the ``Proxmox''. Backup and migrate virtual servers in live and
+offline image based replications. Can troubleshoot containers and
+fully virtualized images by mounting and using ``chroot'' based
+techniques. 
+
+\end{position}
+ 
+\employer{\textbf{Web Technologies/Web Applications}}
+\dates{}
+\begin{position}
+Intermediate knowledge in HMTL, CSS, JavaScript, Jquery, XML and 
+PHP. Knowledge on using the Content Management Systems like Drupal,
+web applications like Django and Ruby on Rails (RoR). Maintained
+Project Management Portal (Redmine). Maintained CGI based web
+administration panels(Easypush from deepOfix) for the LDAP
+accounts. Proficient knowledge on installing and maintaining the web
+analytics using ``Piwik''.
+
+\end{position}
+
+\employer{\textbf{Programming/Scripting Languages}}
+\dates{}
+\begin{position}
+Work experience in C programming language, knowledge on \Cplusplus
+and Java(Core) and the basic knowledge on Python, Perl, Ruby and Shell
+Scripting. Ability to debug (using GDB), understand and analyse the
+code comfortably.
+\end{position}
+
+\employer{\textbf{Database Technologies}}
+\dates{}
+\begin{position}
+Comfort in using the ``Mysql'' in textual and graphical
+mode. Administering the ``Mysql Server'' and usage of ``SQL''
+language. Basic idea on Object Oriented DBMS like ``PostgreSQL'' and
+Document based DBMS like ``CouchDB''.  
+\end{position}
+
+\employer{\textbf{Editors/Tools}}
+\dates{}
+\begin{position}
+Experience in using the IDEs for programming like ``Eclipse'' for Java,
+``Anjuta'' and ``Visual Studio'' for C/\Cplusplus. ``BlueFish'' for web
+programming. ``Emacs'' for standard text editing, ``Org-mode'' for
+personal organizing, project/task management, publishing reports,
+documentation etc. \LaTeX \ for documentation. ``dot(Graphviz)'' for
+diagramatic representation and ``Umbrella'' for project design
+diagrams. ``GIMP'' and ``Inkscape'' for image manipulation. The
+general stack of interests and desktop usage include ``Debian or
+Ubuntu GNU/Linux, LXDE/Gnome Desktop Environment, Emacs,
+Terminator(terminal program), Firefox Web Browser'' in all. Version
+control using ``svn'' and ``git''.\\
+\end{position} 
+
+%%
+%% This section could also use more formatting, but looks ok, as is
+%%
+
+%\section{\textsc{Qualifications}}
+
+%\emph{Programming Languages}: \Cplusplus, \CSharp, Cg, HLSL, ARB assembly, SML, OCaML, PHP, MySQL, Java, Python, Perl, MIPS assembly
+
+%\emph{Libraries and Tools}: Vim, STL, DirectX, OpenGL, \LaTeX, GIMP, Adobe Suite, Macromedia Suite, MatLab, Mathematica, Microsoft Visual Studio, GCC, GDB
+
+
+%%
+%% Note that we're redefining the formatting
+%% We only have one row of information now, instead of two
+%%
+
+\section{\textsc{Activities}}
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\employer{\textbf{Swecha}}
+\dates{2007-2010}
+\begin{position}
+An active volunteer for Swecha(http://swecha.org), an N.G.O working on
+Localization of GNU/ Linux and advocacy of Free Software in
+academia. Participated in many advocacy events and technical camps
+spreading philosophical and technical awareness on FOSS. Volunteered
+and participated in 1st state conference of Swecha held in 2010 and
+Attended for national conferences on Free Software held in 2007 at
+Hyderabad and 2010 at Bangalore.
+
+\end{position}
+
+\employer{\textbf{Drupal Hyderabad}}
+\dates{2009-2010}
+\begin{position}
+Volunteer at ``Drupal Hyderabad'' a Drupal based community based in
+Hyderabad working for promoting and educating Drupal based portals
+across companies and academia.\\ 
+\end{position}
+
+
+\section{\textsc{Personal Details}}
+
+
+\textbf{Father's Name} : Vadla Vishwanatham
+
+\textbf{Gender} : Male
+
+\textbf{Date Of Birth} : 23\third April, 1989
+
+\textbf{Languages known} : English, Telugu, Hindi
+
+\employer{\textbf{Email IDs/Public Profile URLs} :}
+\dates{}
+\begin{position}
+\emph{mahesh4gnu@gmail.com}\\
+\emph{mahesh@virtual-labs.ac.in}\\
+Linkedin Profile:\emph{ http://in.linkedin.com/in/maheshkumarvadla}\\
+Diaspora Profile:\emph{ https://joindiaspora.com/u/maheshkumar}
+\end{position}
+
+\employer{\textbf{Address (Permanent)} :}
+\dates{}
+\begin{position}
+H.No. 2-97,\\
+\emph{Post} : Uppalwai,\\
+\emph{Mdl} : Sadasiva Nagar,\\
+\emph{Dist} : Nizamabad,\\
+Andhra Pradesh,\\
+India.\\
+\emph{Pin} : 503144\\
+\end{position}
+
+\section{\textsc{Credits}}
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+\employer{This resume is prepared in \LaTeX \ using res\_yy.sty and
+  typed in Emacs text editor}
+\dates{}
+\begin{position}
+\end{position}
+
+
+\section{\textsc{Declaration}}
+
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+
+I hereby declare that the above-mentioned information is
+  correct to my knowledge and I bear the responsibility for the
+  correctness of the above-mentioned particulars. \\\\\\\\\\
+
+\section{\textsc{Place}:}
+
+\section{\textsc{Date}:}
+\begin{formatb}
+  \employer{l}\dates{r}\\
+  \body\\
+\end{formatb}
+\employer{}
+\dates{\textbf{(Mahesh Kumar)}}
+\begin{position}
+\end{position}
+%%
+%% Nothing special here, just a normal table
+%%
+
+%\section{\textsc{Course Work}}
+%  \begin{tabular}{lllll}
+%  Information Networks   & \ \ & Machine Learning    & \ \ & Theory of Computation \\ 
+%  Computer Graphics      & \ \ & Machine Vision      & \ \ & Programming Languages \\
+%  Software Engineering   & \ \ & Algorithms          & \ \ & Artificial Intelligence     \\
+%  Operating Systems      & \ \ & Databases           & \ \ & Computer Architecture \\
+%  Numerical Methods      & \ \ & Graph Theory        & \ \ & Differential Equations      \\
+%  Probability Theory     & \ \ & Number Theory       & \ \ & Differential Geometry       \\
+%  Advanced Calculus      & \ \ & Abstract Algebra    & \ \ & Advanced Combinatorics   \\
+%  \end{tabular}
+
+
+\end{resume}
+\end{document}
